@@ -134,3 +134,36 @@ td {
     font-size: 25px;
     text-decoration:underline;
 }
+
+.barra {
+    background-color: rgb(0, 0, 0);
+    height: 125px;
+    border-radius: 20px;
+    display: flex
+
+}
+
+.barra a {
+    padding: 55px;
+    align-self: center;
+    
+}
+
+.barra img {
+    height: 50%;
+    width: 5%;
+    padding: 20px;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.barra img:hover {
+    filter: brightness(1);
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+    align-self: end;
+    text-align: right;
+}
