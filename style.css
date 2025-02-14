@@ -156,3 +156,8 @@ h3 {
     align-self: end;
     text-align: right;
 }
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
