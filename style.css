@@ -149,17 +149,6 @@ td {
     
 }
 
-.barra img {
-    height: 50%;
-    width: 5%;
-    padding: 20px;
-    align-self: center;
-    margin-left: 15px;
-}
-
-.barra img:hover {
-    filter: brightness(1);
-}
 
 h3 {
     color: white;
