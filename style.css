@@ -160,4 +160,5 @@ h3 {
 html, body {
     overflow-x: hidden;
     overflow-y: auto;
+    width: 100%;
 }
