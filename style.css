@@ -77,6 +77,7 @@ img:hover {
 .flex {
     display: flex;
     height: 190px;
+    flex-wrap: wrap;
 }
 
 .legenda {
@@ -197,3 +198,15 @@ html, body {
     border-radius: 10px;
 }
 
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column; /* Empilha a imagem e o texto no celular */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .flex img {
+        width: 80%; /* Faz a imagem ocupar mais espaço no celular */
+        max-width: 200px; /* Limita o tamanho */
+    }
+}
