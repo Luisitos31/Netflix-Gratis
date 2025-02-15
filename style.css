@@ -45,15 +45,14 @@ a {
 }
 
 img {
-    height: 190px;
-    width: 98%;
+    height: 170px;
+    width: 100%;
 
 }
 
 a:hover {
   color: red;
 }
-
 
 img:hover {
     filter: brightness(1.6);
@@ -77,7 +76,6 @@ img:hover {
 .flex {
     display: flex;
     height: 190px;
-    flex-wrap: wrap;
 }
 
 .legenda {
@@ -95,34 +93,9 @@ img:hover {
 }
 
 .nome {
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 20px;
 }
-
-.subtitulo {
-    text-align: left;
-    font-family: sans-serif;
-    margin-left: 20px;
-    font-size: 2vh;
-    max-width: 60vh;
-}
-
-.hr1 {
-    margin-left: 20px;
-}
-
-.tituloebub {
-    flex-direction: column;
-}
-
-.subtitulo:hover {
-    color: red;
-}
-
-hr1:hover {
-    color: red;
-}
-
 
 
 .botao2 {
@@ -187,26 +160,4 @@ h3 {
 html, body {
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.icone img {
-    border-radius: 10px;
-}
-
-.flex img {
-    width: 40vh;
-    border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-    .flex {
-        flex-direction: column; /* Empilha a imagem e o texto no celular */
-        align-items: center; /* Centraliza os itens */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .flex img {
-        width: 40vh /* Faz a imagem ocupar mais espaço no celular */
-        max-width: 200px; /* Limita o tamanho */
-    }
 }
