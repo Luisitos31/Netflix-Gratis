@@ -30,6 +30,7 @@ h1 {
 
 }
 
+
 p {
     color: white;
     text-align: center;
@@ -66,6 +67,27 @@ img:hover {
     filter: brightness(1);
 }
 
+.trailer {
+    width: 100%;
+    height: 800px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 95%);
+    position: relative;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: 45%;
+    padding: 10px 20px 10px;
+    width: 100%;
+}
+
+
 .titulo {
     text-align: left;
     font-size: 60px;
@@ -97,16 +119,26 @@ img:hover {
 
 .flex3 img {
     width: 300px;
+    border-radius: 5px;
 }
 
 .legenda {
-    text-align: center;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.legenda2 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 40px;
 }
 
 .estrela {
     width: 400px;
     height: 250px;
-    margin-left: 90px;
+    margin-left: 100vh;
 }
 
 .estrela:hover {
@@ -136,8 +168,10 @@ img:hover {
     font-size: 25px;
 }
 
+
 td {
     width: 50%;
+    padding: 15px;
 }
 
 .botao3 {
@@ -176,9 +210,10 @@ td {
 
 h3 {
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     align-self: end;
     text-align: right;
+    margin-right: 15px;
 }
 
 html, body {
@@ -189,6 +224,40 @@ html, body {
     padding: 0;
 }
 
+.thumb img {
+    border-radius: 10px;
+    height: 300px;
+}
+
+select {
+    width: 200px;
+    padding: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    color: red;
+    font-size: 20px;
+    appearance: none; /* Remove a setinha padrão */
+    -webkit-appearance: none; /* Para o Safari */
+    -moz-appearance: none; /* Para o Firefox */
+    cursor: pointer;
+}
+
+option {
+    border-radius: 10px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+
+.flex4 {
+    display: flex;
+}
+
+.tituloFilme {
+    font-size: 20px;
+}
 
 
 @media(max-width: 768px) {
@@ -202,7 +271,7 @@ html, body {
     }
 
     a {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .barra a {
@@ -212,7 +281,7 @@ html, body {
 
 
     h3 {
-        font-size: 10px;
+        font-size: 5px;
     }
 
     p {
@@ -239,10 +308,15 @@ html, body {
         position: relative;
     }
 
-   
 
     .legenda {
         font-size: 10px;
+        text-align: center;
+    }
+
+    .legenda2 {
+        font-size: 10px;
+        text-align: center;
     }
 
     .flex2 {
@@ -269,23 +343,41 @@ html, body {
         margin: 2%;
     }
 
+    select {
+        padding: 15px;
+        font-size: 15px;
+        width: 120px;
+    }
+
     .botao3 {
-        font-size: 10px;
-        padding: 10px;
-        margin-left: 15px;
+        font-size: 15px;
+        padding: 15px;
+        margin-left: 50%;
         margin-top: 15px;
         width: auto;
     }
 
     .botao3:hover {
-        font-size: 12px;
-        padding: 12px;
+        font-size: 17px;
+        padding: 17px;
         width: auto;
         margin-right: 5px;
+        
+    }
+    
+    .flex3 {
+        height: 115px;
+    }
+
+    .flex3 a {
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
     }
 
     .flex3 img {
         width: 150px;
+        height: 100px;
     }
 
     .nome {
@@ -302,5 +394,24 @@ html, body {
         width: 100%;
         height: 200px;
         margin-bottom: -60px;
+    }
+    
+    .trailer {
+        height: 200px;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 95%);
+    }
+
+    .absolute {
+        position: static;
+        padding: 0;
+    }
+
+    .thumb img {
+        height: 100px;
+    }
+
+    td {
+        padding: 5px;
     }
 }
