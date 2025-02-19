@@ -52,7 +52,7 @@ img {
 }
 
 a:hover {
-  color: red;
+  color: rgb(47, 255, 57);
 }
 
 img:hover {
@@ -156,13 +156,13 @@ img:hover {
     padding: 20px;
     margin-right: 20px;
     background-color: white;
-    color: red;
+    color: rgb(47, 255, 57);
     border-radius: 30px;
     width: auto;
 }
 
 .botao2:hover {
-    background-color: red;
+    background-color: rgb(47, 255, 57);
     color: white;
     padding: 25px;
     font-size: 25px;
@@ -179,12 +179,12 @@ td {
     padding: 20px;
     margin-right: 20px;
     background-color: black;
-    color: red;
+    color: rgb(47, 255, 57);
     border-radius: 30px;
 }
 
 .botao3:hover {
-    background-color: red;
+    background-color: rgb(47, 255, 57);
     color: rgb(0, 0, 0);
     padding: 25px;
     font-size: 25px;
@@ -197,13 +197,14 @@ td {
     border-radius: 20px;
     display: flex;
     width: 100%;
+    text-align: center;
+    justify-content: center;
 
 }
 
 .barra a {
     padding: 55px;
-    align-self: center;
-    justify-content: space-around;
+    align-items: center;
     
 }
 
@@ -236,7 +237,7 @@ select {
     margin-left: 5px;
     border-radius: 10px;
     background-color: rgb(29, 29, 29);
-    color: red;
+    color: rgb(47, 255, 57);
     font-size: 20px;
     appearance: none; /* Remove a setinha padrão */
     -webkit-appearance: none; /* Para o Safari */
@@ -246,7 +247,7 @@ select {
 
 option {
     border-radius: 10px;
-    color: #ff0000;
+    color: rgb(47, 255, 57);
     cursor: pointer;
 }
 
@@ -270,7 +271,7 @@ option {
 }
 
 .descrição:hover {
-    color: red;
+    color: rgb(47, 255, 57);
 }
 
 
@@ -286,6 +287,10 @@ option {
 
     a {
         font-size: 16px;
+    }
+
+    .barra {
+        align-items: center;
     }
 
     .barra a {
