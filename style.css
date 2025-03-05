@@ -228,7 +228,16 @@ html, body {
 .thumb img {
     border-radius: 10px;
     height: 300px;
+    transition: transform 0.3s ease-in-out;
 }
+
+
+.thumb img:hover {
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+
 
 select {
     width: 200px;
@@ -274,6 +283,197 @@ option {
     color: rgb(47, 255, 57);
 }
 
+#horario {
+    font-size: 25px;
+    margin-top: -30px;
+    font-style:italic;
+}
+
+.modal {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    display: none;
+    overflow-y: hidden;
+    position: fixed;
+
+}
+
+.conteudo {
+    width: 50%;
+    height: 900px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 40px black;
+    overflow: hidden;
+    transform: scale(0.5);
+}
+
+.conteudo img {
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.conteudo img:hover {
+    filter: brightness(1);
+}
+
+.conteudo span {
+    color: rgb(255, 47, 47);
+    position: absolute;
+    font-size: 60px;
+    right: 20px;
+    font-weight: bold;
+}
+
+.conteudo span:hover {
+    cursor: pointer;
+}
+
+.conteudo h2 {
+    color: white;
+    font-size: 70px;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo hr {
+    width: 100%;
+}
+
+.conteudo button {
+    background-color: rgb(47, 255, 57);
+    margin-left: 15px;
+    border-radius: 20px;
+    margin-top: -50px;
+    transition: transform 0.2s ease-in-out;
+    height: 70px;
+}
+
+.conteudo button:hover {
+    transform: scale(1.1);
+}
+
+.conteudo a {
+    font-size: 30px;
+    padding: 40px;
+}
+
+.conteudo a:hover {
+    color: white
+}
+
+
+html, body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resumo p {
+    text-align: start;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.resumo {
+    text-align: start;
+    width: 65%;
+}
+
+.producao {
+    width: 35%;
+}
+
+.juntos {
+    width: 100%;
+    display: flex;
+}
+
+.producao span {
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.producao p {
+    color: white;
+    font-size: 15px;
+    text-align: start;
+    margin-right: 30px;
+    margin-left: 80px;
+}
+
+.producao .classificacaoL {
+    color: rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 9px;
+    padding-left: 9px;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.producao .classificacao12 {
+    color: rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 9px;
+    padding-left: 9px;
+    background-color: rgb(241, 183, 21);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.producao .classificacao10 {
+    color: rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 9px;
+    padding-left: 9px;
+    background-color: rgb(21, 190, 241);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.producao .classificacao16 {
+    color: rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 9px;
+    padding-left: 9px;
+    background-color: rgb(189, 21, 21);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.producao .classificacao18 {
+    color: rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 9px;
+    padding-left: 9px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 8px;
+}
 
 @media(max-width: 768px) {
     * {
@@ -450,4 +650,95 @@ option {
     .flex3 p {
         flex-direction: column;
     }
+
+    .conteudo {
+        width: 80%;
+        height: 90vh;
+    }
+
+    .conteudo img {
+        height: 200px;
+    }
+
+    .conteudo h2 {
+        font-size: 25px;
+    }
+
+    .conteudo button {
+        height: 50px;
+        width: 100px;
+        margin-top: -5px;
+    }
+
+    .conteudo a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .resumo p {
+        font-size: 10.3px;
+        width: 65%;
+    }
+
+    .producao {
+        width: 35%;
+    }
+
+    .producao p {
+        margin-left: 0;
+        font-size: 9px;
+    }
+
+    .conteudo .sair {
+        font-size: 50px;
+        right: -250px;
+    }
+
+    .producao span {
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+    .producao .classificacaoL {
+        font-size: 10px;
+        padding-left: 5px ;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .producao .classificacao12 {
+        font-size: 10px;
+        padding-left: 5px ;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .producao .classificacao10 {
+        font-size: 10px;
+        padding-left: 5px ;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .producao .classificacao16 {
+        font-size: 10px;
+        padding-left: 5px ;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .producao .classificacao18 {
+        font-size: 10px;
+        padding-left: 5px ;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+
+
 }
