@@ -313,7 +313,8 @@ option {
     opacity: 0;
     transition: all 0.4s ease-in-out;
     box-shadow: 0px 0px 40px black;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     transform: scale(0.5);
 }
 
@@ -474,6 +475,7 @@ html, body {
     font-size: 15px;
     margin-left: 8px;
 }
+
 
 @media(max-width: 768px) {
     * {
@@ -691,7 +693,7 @@ html, body {
 
     .conteudo .sair {
         font-size: 50px;
-        right: -250px;
+        right: -85%;
     }
 
     .producao span {
