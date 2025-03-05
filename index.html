@@ -6,9 +6,10 @@
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://th.bing.com/th/id/R.0d84fe201bc09345250e1025685db8ac?rik=POKWx9APYhThGA&pid=ImgRaw&r=0">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #141414;">
+<body id="body" style="background-color: #141414;">
 
 
     
@@ -37,17 +38,16 @@
         <tr>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/watch?v=nJz_vKhpWbY">Planeta dos Macacos</a>
-                    <a href="https://www.youtube.com/watch?v=nJz_vKhpWbY">
-                        <img src="Thumbs/PlanetaDosMacacos_Thumb.png" alt="">
+                    <a href="#">
+                        <img id="PM" src="Thumbs/PlanetaDosMacacos_Thumb.png" alt="">
                     </a>
                 </div>
             </td>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/shorts/2XxVjwogUPY">Motoqueiro Fantasma</a>
-                    <a href="https://www.youtube.com/shorts/2XxVjwogUPY">
-                        <img src="Thumbs/MotoqueiroFantasma_thumb.png" alt="">
+
+                    <a href="#">
+                        <img id="MF" src="Thumbs/MotoqueiroFantasma_thumb.png" alt="">
                     </a>
                 </div>
             </td>
@@ -58,17 +58,17 @@
         <tr>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/watch?v=o7fT2ZUQUMI">Peppa Pig: The Movie</a>
-                    <a href="https://www.youtube.com/watch?v=o7fT2ZUQUMI">
-                        <img src="Thumbs/PeppaPigTheMovie_thumb.png" alt="">
+                    <a href="#"></a>
+                    <a href="#">
+                        <img id="PP" src="Thumbs/PeppaPigTheMovie_thumb.png" alt="">
                     </a>
                 </div>
             </td>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/watch?v=v07H75lWdYw">Velozes e furiosos</a>
-                    <a href="https://www.youtube.com/watch?v=v07H75lWdYw">
-                        <img src="Thumbs/VelozesEFuriosos_thumb.png" alt="">
+                    <a href="#"></a>
+                    <a href="#">
+                        <img id="VF" src="Thumbs/VelozesEFuriosos_thumb.png" alt="">
                     </a>
                 </div>
             </td>
@@ -77,17 +77,17 @@
         <tr>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/watch?v=u10QTvRBEJY">Minions 777</a>
-                    <a href="https://www.youtube.com/watch?v=u10QTvRBEJY">
-                        <img src="Thumbs/Minions777_thumb.png" alt="">
+                    <a href="#"></a>
+                    <a href="#">
+                        <img id="M7" src="Thumbs/Minions777_thumb.png" alt="">
                     </a>
                 </div>
             </td>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/shorts/SXkVxeIiMVQ">Madagascar: A Origem</a>
-                    <a href="https://www.youtube.com/shorts/SXkVxeIiMVQ">
-                        <img src="https://i.imgflip.com/47qtpq.png" alt="">
+                    <a href="#"></a>
+                    <a href="#">
+                        <img id="MD" src="https://i.imgflip.com/47qtpq.png" alt="">
                     </a>
                 </div>
                
@@ -99,22 +99,297 @@
         <tr>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/watch?v=dGnNM2uE4HE">Nicolas Netto: Renegade</a>
-                    <a href="https://www.youtube.com/watch?v=dGnNM2uE4HE">
-                        <img src="Thumbs/NicolasNettoRenegade.png" alt="">
+                    <a href="#"></a>
+                    <a href="#">
+                        <img id="NN" src="Thumbs/NicolasNettoRenegade.png" alt="">
                     </a>
                 </div>
             <td>
                 <div class="thumb">
-                    <a href="https://www.youtube.com/watch?v=8CSy_mxLelE">Minecraft: The Movie</a>
-                    <a href="https://www.youtube.com/watch?v=8CSy_mxLelE">
-                        <img src="https://th.bing.com/th/id/OIP.fmy7x8IXouGBw96kEl7VPwAAAA?rs=1&pid=ImgDetMain" alt="">
+                    <a href="#"></a>
+                    <a href="#">
+                        <img id="MC" src="https://th.bing.com/th/id/OIP.fmy7x8IXouGBw96kEl7VPwAAAA?rs=1&pid=ImgDetMain" alt="">
                     </a>
                 </div>
             </td>
             </td>
         </tr>
     </table>
+
+    <div id="modalPM" class="modal">
+        <div id="conteudoPM" class="conteudo">
+            <img src="Thumbs/PlanetaDosMacacos_Thumb.png" alt="">
+            <span id="fecharPM" class="sair">&times</span>
+            <h2>Planeta dos Macacos</h2>
+            <button>
+                <a href="https://www.youtube.com/watch?v=nJz_vKhpWbY">&#9654; Assistir</a>
+            </button>
+            <br><br>
+            <hr>
+            <br><br>
+
+            <div class="juntos">
+            <div class="resumo">
+                    <p>Em um futuro pós-apocalíptico, a Terra foi tomada por uma nova ordem dominada por macacos inteligentes. Em vez de se envolver em conflitos ou revoluções, um macaco curioso encontra um carrinho de golfe abandonado e decide explorá-lo. A trama segue sua jornada por um campo de golfe desolado, enquanto ele faz manobras hilárias e se envolve em situações cômicas. O filme não foca em drama ou ação, mas sim nas aventuras e trapalhadas desse macaco ao dirigir o carrinho, proporcionando momentos de leveza e diversão em meio ao caos do planeta.</p>
+                </div>
+                <div class="producao">
+                    <p><span>Elenco:</span>Macaco</p>
+                    <p><span>Gêneros:</span>Comédia, Ação, Filmes Para a Família</p>
+                    <p><span>Classificação:</span><span class="classificacaoL">L</span></p>
+                    <p><span>Lançamento:</span>2025</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div id="modalMF" class="modal">
+        <div id="conteudoMF" class="conteudo">
+            <img src="Thumbs/MotoqueiroFantasma_thumb.png" alt="">
+            <span id="fecharMF" class="sair">&times</span>
+            <h2>Motoqueiro Fantasma</h2>
+            <button>
+                <a href="https://www.youtube.com/shorts/2XxVjwogUPY">&#9654; Assistir</a>
+            </button>
+            <br><br>
+            <hr>
+            <br><br>
+            <div class="juntos">
+                <div class="resumo">
+                        <p>Em um cenário de ação e suspense, um homem sem experiência tenta controlar uma moto misteriosa que constantemente o desafia. A cada tentativa, ele sofre quedas inesperadas, enquanto uma ameaça invisível parece sempre estar um passo à frente. Sua luta por controle se transforma em um jogo mortal, onde a tensão e a adrenalina são constantes. Com o perigo se aproximando, ele precisa superar seus próprios limites ou enfrentar um destino incerto. A cada segundo, ele está mais próximo de uma queda fatal, enquanto a pressão cresce implacavelmente.</p>
+                    </div>
+                    <div class="producao">
+                        <p><span>Elenco:</span>Gordão da XJ</p>
+                        <p><span>Gêneros:</span>Ação, Suspense, Drama</p>
+                        <p><span>Classificação:</span><span class="classificacao12">12</span></p>
+                        <p><span>Lançamento:</span>2025</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div id="modalPP" class="modal">
+            <div id="conteudoPP" class="conteudo">
+                <img src="Thumbs/PeppaPigTheMovie_thumb.png" alt="">
+                <span id="fecharPP" class="sair">&times</span>
+                <h2>Peppa Pig: The Movie</h2>
+                <button>
+                    <a href="https://www.youtube.com/watch?v=o7fT2ZUQUMI">&#9654; Assistir</a>
+                </button>
+                <br><br>
+                <hr>
+                <br><br>
+                <div class="juntos">
+                    <div class="resumo">
+                            <p>Em um mundo onde as palavras são armas e o ritmo é a chave para a vitória, uma competição épica está prestes a começar. Peppa e sua turma entram em um torneio de rap que vai definir quem domina as rimas e quem será humilhado no beat. Entre versos afiados, batalhas acirradas e provocações hilárias, a disputa esquenta quando um rival inesperado surge para desafiar tudo o que eles conhecem sobre o jogo. Com a plateia vibrando e a tensão aumentando a cada punchline, Peppa precisará provar que tem o flow necessário para se tornar a verdadeira rainha do rap. Ou aceitar a derrota e nunca mais rimar.</p>
+                        </div>
+                        <div class="producao">
+                            <p><span>Elenco:</span>Peppa Pig, Mussoumano</p>
+                            <p><span>Gêneros:</span>Comédia Musical, Drama, Ação</p>
+                            <p><span>Classificação:</span><span class="classificacao10">10</span></p>
+                            <p><span>Lançamento:</span>2025</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div id="modalVF" class="modal">
+                <div id="conteudoVF" class="conteudo">
+                    <img src="Thumbs/VelozesEFuriosos_thumb.png" alt="">
+                    <span id="fecharVF" class="sair">&times</span>
+                    <h2>Velozes e Furioso</h2>
+                    <button>
+                        <a href="https://www.youtube.com/watch?v=v07H75lWdYw">&#9654; Assistir</a>
+                    </button>
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div class="juntos">
+                        <div class="resumo">
+                                <p>Uma ameaça surge nas ruas, e a equipe mais veloz do planeta recebe a ajuda de um herói ágil e um gigante furioso. Entre perseguições insanas, destruição e tecnologia avançada, eles precisam unir velocidade e força para vencer a corrida mais perigosa de suas vidas.</p>
+                            </div>
+                            <div class="producao">
+                                <p><span>Elenco:</span>Homem Aranha, Homem de Ferro, Batmam, Freddy, Optimus Prime, Bumblebee, Capitão América, Wolverine, Lanterna Verde</p>
+                                <p><span>Gêneros:</span>Corrida, Super-Herói, Ação, Ficção Científica</p>
+                                <p><span>Classificação:</span><span class="classificacaoL">L</span></p>
+                                <p><span>Lançamento:</span>2025</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div id="modalM7" class="modal">
+                    <div id="conteudoM7" class="conteudo">
+                        <img src="Thumbs/Minions777_thumb.png" alt="">
+                        <span id="fecharM7" class="sair">&times</span>
+                        <h2>Velozes e Furioso</h2>
+                        <button>
+                            <a href="https://www.youtube.com/watch?v=u10QTvRBEJY">&#9654; Assistir</a>
+                        </button>
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div class="juntos">
+                            <div class="resumo">
+                                    <p>Quando um golpe dá errado, os Minions acabam atrás das grades em uma prisão de segurança máxima. Cercados por criminosos perigosos e guardas implacáveis, eles precisam usar toda a sua criatividade, trapalhadas e planos malucos para escapar antes que seja tarde demais. Enquanto isso, do lado de fora, um resgate caótico está sendo arquitetado por seus amigos, resultando em uma missão cheia de explosões, disfarces absurdos e muita confusão. Com o tempo se esgotando e tudo dando errado como sempre, a única certeza é que essa fuga será a mais insana de todas!</p>
+                                </div>
+                                <div class="producao">
+                                    <p><span>Elenco:</span>Steve, Minions</p>
+                                    <p><span>Gêneros:</span>Drama, Suspense, Ação</p>
+                                    <p><span>Classificação:</span><span class="classificacao10">10</span></p>
+                                    <p><span>Lançamento:</span>2025</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+                                <div id="modalM7" class="modal">
+                    <div id="conteudoM7" class="conteudo">
+                        <img src="Thumbs/Minions777_thumb.png" alt="">
+                        <span id="fecharM7" class="sair">&times</span>
+                        <h2>Velozes e Furioso</h2>
+                        <button>
+                            <a href="https://www.youtube.com/watch?v=u10QTvRBEJY">&#9654; Assistir</a>
+                        </button>
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div class="juntos">
+                            <div class="resumo">
+                                    <p>Quando um golpe dá errado, os Minions acabam atrás das grades em uma prisão de segurança máxima. Cercados por criminosos perigosos e guardas implacáveis, eles precisam usar toda a sua criatividade, trapalhadas e planos malucos para escapar antes que seja tarde demais. Enquanto isso, do lado de fora, um resgate caótico está sendo arquitetado por seus amigos, resultando em uma missão cheia de explosões, disfarces absurdos e muita confusão. Com o tempo se esgotando e tudo dando errado como sempre, a única certeza é que essa fuga será a mais insana de todas!</p>
+                                </div>
+                                <div class="producao">
+                                    <p><span>Elenco:</span>Steve, Minions</p>
+                                    <p><span>Gêneros:</span>Drama, Suspense, Ação</p>
+                                    <p><span>Classificação:</span><span class="classificacao10">10</span></p>
+                                    <p><span>Lançamento:</span>2025</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                        <div id="modalM7" class="modal">
+                    <div id="conteudoM7" class="conteudo">
+                        <img src="Thumbs/Minions777_thumb.png" alt="">
+                        <span id="fecharM7" class="sair">&times</span>
+                        <h2>Velozes e Furioso</h2>
+                        <button>
+                            <a href="https://www.youtube.com/watch?v=u10QTvRBEJY">&#9654; Assistir</a>
+                        </button>
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div class="juntos">
+                            <div class="resumo">
+                                    <p>Quando um golpe dá errado, os Minions acabam atrás das grades em uma prisão de segurança máxima. Cercados por criminosos perigosos e guardas implacáveis, eles precisam usar toda a sua criatividade, trapalhadas e planos malucos para escapar antes que seja tarde demais. Enquanto isso, do lado de fora, um resgate caótico está sendo arquitetado por seus amigos, resultando em uma missão cheia de explosões, disfarces absurdos e muita confusão. Com o tempo se esgotando e tudo dando errado como sempre, a única certeza é que essa fuga será a mais insana de todas!</p>
+                                </div>
+                                <div class="producao">
+                                    <p><span>Elenco:</span>Steve, Minions</p>
+                                    <p><span>Gêneros:</span>Drama, Suspense, Ação</p>
+                                    <p><span>Classificação:</span><span class="classificacao10">10</span></p>
+                                    <p><span>Lançamento:</span>2025</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div id="modalMD" class="modal">
+                        <div id="conteudoMD" class="conteudo">
+                            <img src="https://i.imgflip.com/47qtpq.png" alt="">
+                            <span id="fecharMD" class="sair">&times</span>
+                            <h2>Madagascar: A Origem</h2>
+                            <button>
+                                <a href="https://www.youtube.com/shorts/SXkVxeIiMVQ">&#9654; Assistir</a>
+                            </button>
+                            <br><br>
+                            <hr>
+                            <br><br>
+                            <div class="juntos">
+                                <div class="resumo">
+                                        <p>Os pinguins de Madagascar estão de volta com suas trapalhadas, mas agora suas confusões são mais ousadas. Tentando realizar tarefas simples, eles acabam criando desastres, com explosões acidentais e gadgets quebrados. A cada erro, a bagunça só aumenta, colocando tudo e todos em risco. Um filme cheio de piadas ousadas e situações descontroladas, com uma dose extra de caos, sem ser adequado para os mais jovens.</p>
+                                    </div>
+                                    <div class="producao">
+                                        <p><span>Elenco:</span>Pinguins</p>
+                                        <p><span>Gêneros:</span>Espionagem, Mistério, Drama</p>
+                                        <p><span>Classificação:</span><span class="classificacao16">16</span></p>
+                                        <p><span>Lançamento:</span>2025</p>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div id="modalMD" class="modal">
+                        <div id="conteudoMD" class="conteudo">
+                            <img src="https://i.imgflip.com/47qtpq.png" alt="">
+                            <span id="fecharMD" class="sair">&times</span>
+                            <h2>Madagascar: A Origem</h2>
+                            <button>
+                                <a href="https://www.youtube.com/shorts/SXkVxeIiMVQ">&#9654; Assistir</a>
+                            </button>
+                            <br><br>
+                            <hr>
+                            <br><br>
+                            <div class="juntos">
+                                <div class="resumo">
+                                        <p>Os pinguins de Madagascar estão de volta com suas trapalhadas, mas agora suas confusões são mais ousadas. Tentando realizar tarefas simples, eles acabam criando desastres, com explosões acidentais e gadgets quebrados. A cada erro, a bagunça só aumenta, colocando tudo e todos em risco. Um filme cheio de piadas ousadas e situações descontroladas, com uma dose extra de caos, sem ser adequado para os mais jovens.</p>
+                                    </div>
+                                    <div class="producao">
+                                        <p><span>Elenco:</span>Pinguins</p>
+                                        <p><span>Gêneros:</span>Espionagem, Mistério, Drama</p>
+                                        <p><span>Classificação:</span><span class="classificacao16">16</span></p>
+                                        <p><span>Lançamento:</span>2025</p>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div id="modalNN" class="modal">
+                            <div id="conteudoNN" class="conteudo">
+                                <img src="Thumbs/NicolasNettoRenegade.png" alt="">
+                                <span id="fecharNN" class="sair">&times</span>
+                                <h2>Nicolas Netto: Renegade</h2>
+                                <button>
+                                    <a href="https://www.youtube.com/watch?v=OpQxZcxPqkw">&#9654; Assistir</a>
+                                </button>
+                                <br><br>
+                                <hr>
+                                <br><br>
+                                <div class="juntos">
+                                    <div class="resumo">
+                                            <p>Nicolas Netto, um cantor irreverente e cheio de personalidade, decide abandonar as convenções da indústria musical e seguir seu próprio caminho. Quando uma gravadora tenta impor suas regras, ele se rebela e transforma sua jornada em uma série de situações cômicas e performances musicais improvisadas. Entre desventuras hilárias, encontros inesperados e apresentações improvisadas, ele prova que a verdadeira liberdade vem de ser autêntico. Um filme recheado de músicas contagiantes, risadas e momentos divertidos, onde a diversão nunca para e as surpresas não têm limites.</p>
+                                        </div>
+                                        <div class="producao">
+                                            <p><span>Elenco:</span>Nicolas Netto, Natan Natto, Caio Catto</p>
+                                            <p><span>Gêneros:</span>Musical, Comédia, Aventura</p>
+                                            <p><span>Classificação:</span><span class="classificacaoL">L</span></p>
+                                            <p><span>Lançamento:</span>2025</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modalMC" class="modal">
+                            <div id="conteudoMC" class="conteudo">
+                                <img src="https://th.bing.com/th/id/OIP.fmy7x8IXouGBw96kEl7VPwAAAA?rs=1&pid=ImgDetMain" alt="">
+                                <span id="fecharMC" class="sair">&times</span>
+                                <h2>Minecraft: The Movie</h2>
+                                <button>
+                                    <a href="https://www.youtube.com/watch?v=8CSy_mxLelE">&#9654; Assistir</a>
+                                </button>
+                                <br><br>
+                                <hr>
+                                <br><br>
+                                <div class="juntos">
+                                    <div class="resumo">
+                                            <p>Em um vasto mundo de blocos e aventuras, dois jogadores se encontram em uma versão mais íntima e intensa do Minecraft. A jornada começa com exploração, construção e diversão, mas logo se transforma em uma história de paixão crescente. Entre construções deslumbrantes e momentos descontraídos, os dois começam a desenvolver uma conexão que vai além do virtual. Quando o jogo se torna um cenário de romance e desejo, a relação se intensifica, misturando emoção e intensidade a cada bloco colocado. O que começa como uma amizade se transforma em algo mais, onde o mundo pixelado se torna o cenário perfeito para o romance florescer.</p>
+                                        </div>
+                                        <div class="producao">
+                                            <p><span>Elenco:</span>Jenny's, Steve</p>
+                                            <p><span>Gêneros:</span>Romance, Fantasia, Dança</p>
+                                            <p><span>Classificação:</span><span class="classificacao18">18</span></p>
+                                            <p><span>Lançamento:</span>2025</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
 
     <h3>© 2025 Netflix Grátis Interprise. Todos os direitos reservados. <br>
         Este conteúdo é propriedade exclusiva de Netflix Grátis Interprise. Qualquer reprodução, distribuição ou modificação sem autorização prévia está estritamente proibida.</h3>
